@@ -1,5 +1,11 @@
 package Sample;
 
+import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 
 public class DotCom {
@@ -29,5 +35,21 @@ public class DotCom {
 			}
 		}
 		return result;
+	}
+	
+	void fileInput() {
+		 try {
+	            FileInputStream is = new FileInputStream("file.txt");
+	            InputStreamReader in = new InputStreamReader(is, "SJIS");
+	            BufferedReader br = new BufferedReader(in);
+	            String line;
+	            while ((line = br.readLine()) != null) {
+	                System.out.println(line);
+	            }
+	            br.close();
+	            in.close();
+	        } catch (IOException e) {
+	            System.out.println(e);
+	        }
 	}
 }

@@ -14,6 +14,7 @@ public class DotComBust {
 	}
 	
 	void setUpGames() {
+		DotCom com = new DotCom();
 		DotCom com1 = new DotCom();
 		DotCom com2 = new DotCom();
 		DotCom com3 = new DotCom();
@@ -30,9 +31,9 @@ public class DotComBust {
 			ArrayList<String> placeList = helper.placeDotCom(3);
 			dotComToSet.setLocationCells(placeList);
 		}
-		System.out.println("これは戦艦撃破ゲームです！");
-		System.out.println("a0～a6.....g6までを入力して下さい！");
-		System.out.println("では、頑張ってください！");
+		
+		com.fileInput();
+		
 	}
 	
 	void startPlaying() {
