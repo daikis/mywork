@@ -52,7 +52,7 @@ public class DotComBust {
 			if (result.equals("hit")) {
 				System.out.println();
 				System.out.println(dotComTest.getName() + " " + "に当たった！");
-				System.out.println(dotComTest.getName() + " " + "「痛い！」");
+				System.out.println(dotComTest.getName() + " " + "「痛い！!」");
 				System.out.println();
 				break;
 			}
